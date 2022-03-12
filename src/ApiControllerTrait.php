@@ -6,7 +6,7 @@ use Spatie\QueryBuilder\QueryBuilder;
 
 trait ApiControllerTrait
 {
-    abstract protected function getQueryBuilder() : QueryBuilder;
+    abstract protected function getQueryBuilder($query = null) : QueryBuilder;
 
     protected function getAllPaginated($limit = 25)
     {

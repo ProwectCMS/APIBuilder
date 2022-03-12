@@ -19,9 +19,9 @@ class UserController extends Controller
 {
     use ApiControllerTrait;
 
-    protected function getQueryBuilder($custom = null) : QueryBuilder
+    protected function getQueryBuilder($query = User::class) : QueryBuilder
     {
-        $query = QueryBuilder::for($custom ? $custom : User::class);
+        $query = QueryBuilder::for($query);
 
         $query->allowedFields(['id', 'name']);
         
