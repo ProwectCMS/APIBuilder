@@ -1,0 +1,32 @@
+{
+    "name": "prowectcms/api-builder",
+    "version": "1.0.0",
+    "description": "Laravel API Builder based on spatie/laravel-query-builder",
+    "require": {
+        "illuminate/support": "^9.4",
+        "laravel/sanctum": "^2.14",
+        "spatie/laravel-query-builder": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^7.1",
+        "sempro/phpunit-pretty-print": "^1.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ProwectCMS\\ApiBuilder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ProwectCMS\\ApiBuilder\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alina",
+            "email": "alina.kessler@prowect.com"
+        }
+    ]
+}
